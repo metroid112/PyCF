@@ -14,19 +14,10 @@ Output
 Write the needed number of flagstones.
 """
 
-import sys
+
 import math
-import re
 
 
-def challenge(arguments):
-    return math.ceil(int(arguments[0]) / int(arguments[2])) * math.ceil(int(arguments[1]) / int(arguments[2]))
-
-
-def main():
-    arguments = input()
-    sys.stdout.write(str(challenge(re.split(' ', arguments))))
-
-
-if __name__ == "__main__":
-    main()
+def challenge(args):
+    n, m, a = map(int, args)
+    return math.ceil(m / a) * math.ceil(n / a)

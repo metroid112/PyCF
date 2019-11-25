@@ -131,3 +131,4 @@ dmypy.json
 .idea/PyCF.iml
 .idea/vcs.xml
 .idea/workspace.xml
+.idea/encodings.xml
